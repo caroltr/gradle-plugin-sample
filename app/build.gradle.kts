@@ -70,5 +70,8 @@ class GreetingScriptPlugin : Plugin<Project> {
     }
 }
 
-// Apply the plugin
+// Apply the plugin implemented in this file
 apply<GreetingScriptPlugin>()
+
+// Apply `ScriptPlugin.gradle.kts` in this file
+apply(from = "ScriptPlugin.gradle.kts")
