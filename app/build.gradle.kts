@@ -78,3 +78,6 @@ apply<GreetingScriptPlugin>()
 
 // Apply `ScriptPlugin.gradle.kts` in this file
 apply(from = "ScriptPlugin.gradle.kts")
+
+// alternative to plugins { id(...) }
+apply(plugin = "PrecompiledScriptPluginClass")
