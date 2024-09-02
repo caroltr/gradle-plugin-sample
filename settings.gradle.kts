@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("greeting-plugin")
     repositories {
         google {
             content {
@@ -24,4 +25,3 @@ gradle.startParameter.excludedTaskNames.addAll(listOf(":greeting-plugin:testClas
 
 rootProject.name = "Gradle Plugin Sample"
 include(":app")
-includeBuild("greeting-plugin")
