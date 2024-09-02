@@ -19,6 +19,9 @@ dependencyResolutionManagement {
     }
 }
 
+// https://medium.com/@ttdevelopment/encountering-the-unable-to-make-progress-running-work-error-in-gradle-6bc363ac1eb8
+gradle.startParameter.excludedTaskNames.addAll(listOf(":greeting-plugin:testClasses"))
+
 rootProject.name = "Gradle Plugin Sample"
 include(":app")
- 
+includeBuild("greeting-plugin")
