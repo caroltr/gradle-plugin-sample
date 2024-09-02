@@ -57,3 +57,18 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
+
+// Sample of Script Plugin
+// ./gradlew helloScriptPlugin
+class GreetingScriptPlugin : Plugin<Project> {
+    override fun apply(project: Project) {
+        project.task("helloScriptPlugin") {
+            doLast {
+                println("This is an example of Script Plugin")
+            }
+        }
+    }
+}
+
+// Apply the plugin
+apply<GreetingScriptPlugin>()
