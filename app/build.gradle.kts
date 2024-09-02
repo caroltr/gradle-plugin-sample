@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
+    // in order to this ID be recognized, it must be located in buildSrc/src/main/kotlin folder
+    id("PrecompiledScriptPlugin")
 }
 
 android {
