@@ -1,5 +1,5 @@
 pluginManagement {
-    includeBuild("greeting-plugin")
+    includeBuild("custom-plugins")
     repositories {
         google {
             content {
@@ -21,7 +21,7 @@ dependencyResolutionManagement {
 }
 
 // https://medium.com/@ttdevelopment/encountering-the-unable-to-make-progress-running-work-error-in-gradle-6bc363ac1eb8
-gradle.startParameter.excludedTaskNames.addAll(listOf(":greeting-plugin:testClasses"))
+gradle.startParameter.excludedTaskNames.addAll(listOf(":custom-plugins:testClasses"))
 
 rootProject.name = "Gradle Plugin Sample"
 include(":app")
