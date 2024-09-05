@@ -8,7 +8,7 @@ It consists of two modules:
 
 - **:custom-plugins -** contains the implemented custom plugins
 
-## Important files
+## Important gradle files
 
 - **settings.gradle.kts** - contains the `includeBuild` declaration which includes the `custom-plugins` module as included build. For more information, see the ([composite builds](https://docs.gradle.org/current/userguide/composite_builds.html)) documentation.
   
@@ -34,3 +34,9 @@ It consists of two modules:
           ```
 
 - **custom-plugins/build.gradle.kts** - define the built plugins using the `gadlePlugin {}` script block
+
+
+# Resources
+- https://docs.gradle.org/current/userguide/custom_plugins.html
+- https://docs.gradle.org/current/userguide/plugins.html
+- https://developer.android.com/build/extend-agp
